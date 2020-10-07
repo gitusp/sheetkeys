@@ -203,6 +203,9 @@ SheetActions = {
   moveLeftAndSelect() { UI.typeKey(KeyboardUtils.keyCodes.leftArrow, {shift: true}); },
   moveRightAndSelect() { UI.typeKey(KeyboardUtils.keyCodes.rightArrow, {shift: true}); },
 
+  jumpForward() { UI.typeKey(KeyboardUtils.keyCodes.rightArrow, {meta: true}); },
+  jumpBackward() { UI.typeKey(KeyboardUtils.keyCodes.leftArrow, {meta: true}); },
+
   //
   // Row movement
   //

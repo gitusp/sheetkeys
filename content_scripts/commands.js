@@ -12,6 +12,9 @@ Commands = {
     moveColumnsLeft: { fn: SheetActions.moveColumnsLeft.bind(SheetActions) },
     moveColumnsRight: { fn: SheetActions.moveColumnsRight.bind(SheetActions) },
 
+    jumpForward: { fn: SheetActions.jumpForward.bind(SheetActions) },
+    jumpBackward: { fn: SheetActions.jumpBackward.bind(SheetActions) },
+
     // Editing
     editCell: { fn: SheetActions.editCell.bind(SheetActions) },
     editCellAppend: { fn: SheetActions.editCellAppend.bind(SheetActions) },
@@ -96,6 +99,10 @@ Commands = {
       "down": "moveDown",
       "left": "moveLeft",
       "right": "moveRight",
+      w: "jumpForward",
+      e: "jumpForward",
+      b: "jumpBackward",
+      "g,e": "jumpBackward",
 
       // Row & column movement
       "<C-j>": "moveRowsDown",
