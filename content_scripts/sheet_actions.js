@@ -263,7 +263,10 @@ SheetActions = {
   undo() { this.clickMenu(this.menuItems.undo); },
   redo() { this.clickMenu(this.menuItems.redo); },
 
-  clear() { this.clickMenu(this.menuItems.deleteValues); },
+  clear() {
+    this.copy();
+    this.clickMenu(this.menuItems.deleteValues);
+  },
 
   // Creates a row below and begins editing it.
   openRowBelow() {
